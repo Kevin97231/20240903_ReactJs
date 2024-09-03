@@ -7,12 +7,18 @@ function HookUseState() {
 
   const increment = () => {
     count2 += 1;
-    setCount(count + 1);
+    // setCount(count + 1);
+
+    // conseillé par React:
+    setCount((value) => value + 1);
   };
 
   const decrement = () => {
     count2 -= 1;
-    setCount(count - 1);
+    // setCount(count - 1);
+
+    // conseillé par React:
+    setCount((value) => value - 1);
   };
 
   return (
