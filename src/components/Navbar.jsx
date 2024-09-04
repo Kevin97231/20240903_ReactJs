@@ -34,6 +34,12 @@ export const Navbar = () => {
             <li>
               <Link to={"/flux"}>Flux</Link>
             </li>
+            <li>
+              <Link to={"/use-effect"}>useEffect</Link>
+            </li>
+            <li>
+              <Link to={"/exercice"}>Exercice</Link>
+            </li>
           </ul>
         </div>
         <Link className="btn btn-ghost text-xl" to={"/"}>
@@ -41,7 +47,7 @@ export const Navbar = () => {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 font-bold">
           <li>
             <Link to={"/hook-use-state"}>Hook useState</Link>
           </li>
@@ -50,6 +56,12 @@ export const Navbar = () => {
           </li>
           <li>
             <Link to={"/flux"}>Flux</Link>
+          </li>
+          <li>
+            <Link to={"/use-effect"}>useEffect</Link>
+          </li>
+          <li>
+            <Link to={"/exercice"}>Exercice</Link>
           </li>
         </ul>
       </div>
