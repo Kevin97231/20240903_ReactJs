@@ -11,6 +11,7 @@ import { CycleDeVie } from "./view/CycleDeVie";
 import { ComposantClass } from "./view/ComposantClass";
 import { RequeteApi } from "./view/RequeteApi";
 import { ExerciceApi } from "./view/ExerciceApi";
+import { HookPersonnalise } from "./view/HookPersonnalise";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="cycle-de-vie/class" element={<ComposantClass />} />
           <Route path="requete-api" element={<RequeteApi />} />
           <Route path="exercice-api" element={<ExerciceApi />} />
+          <Route path="hook-perso" element={<HookPersonnalise />} />
         </Routes>
       </BrowserRouter>
     </>

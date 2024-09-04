@@ -45,6 +45,9 @@ export const Navbar = () => {
               <Link to={"/requete-api"}>Requettes API</Link>
             </li>
             <li>
+              <Link to={"/hook-perso"}>Hook perso</Link>
+            </li>
+            <li>
               <Link to={"/exercice"}>Exercice</Link>
             </li>
             <li>
@@ -75,6 +78,9 @@ export const Navbar = () => {
           </li>
           <li>
             <Link to={"/requete-api"}>Requettes API</Link>
+          </li>
+          <li>
+            <Link to={"/hook-perso"}>Hook perso</Link>
           </li>
           <li>
             <Link to={"/exercice"}>Exercice 'fruits'</Link>
