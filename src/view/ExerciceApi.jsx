@@ -1,3 +1,10 @@
+import { Consigne } from "../components/exerciceAPI/Consigne";
+
 export const ExerciceApi = () => {
-  return <h1 className="pt-20">Exercie API</h1>;
+  return (
+    <div className="pt-20">
+      <h1>Exercie API</h1>;
+      <Consigne />
+    </div>
+  );
 };
