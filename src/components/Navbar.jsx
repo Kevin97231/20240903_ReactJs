@@ -41,6 +41,9 @@ export const Navbar = () => {
               <Link to={"/cycle-de-vie"}>Cycle de vie</Link>
             </li>
             <li>
+              <Link to={"/requete-api"}>Requettes API</Link>
+            </li>
+            <li>
               <Link to={"/exercice"}>Exercice</Link>
             </li>
           </ul>
@@ -65,6 +68,9 @@ export const Navbar = () => {
           </li>
           <li>
             <Link to={"/cycle-de-vie"}>Cycle de vie</Link>
+          </li>
+          <li>
+            <Link to={"/requete-api"}>Requettes API</Link>
           </li>
           <li>
             <Link to={"/exercice"}>Exercice</Link>
