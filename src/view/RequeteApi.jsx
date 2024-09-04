@@ -1,3 +1,5 @@
+import { ExempleRequetes } from "../components/ExempleRequetes";
+
 /* eslint-disable react/no-unescaped-entities */
 export const RequeteApi = () => {
   return (
@@ -30,6 +32,22 @@ export const RequeteApi = () => {
       <a className="underline" href="https://axios-http.com/fr/docs/example">
         documentation axios
       </a>
+      <h2>Adresses de notre json server: </h2>
+      <ul>
+        <li>
+          <strong>GET: </strong> http://localhost:3001/products
+        </li>
+        <li>
+          <strong>POST: </strong> http://localhost:3001/products
+        </li>
+        <li>
+          <strong>PUT: </strong> http://localhost:3001/products/id
+        </li>
+        <li>
+          <strong>DELETE: </strong> http://localhost:3001/products/id
+        </li>
+      </ul>
+      <ExempleRequetes />
     </div>
   );
 };
