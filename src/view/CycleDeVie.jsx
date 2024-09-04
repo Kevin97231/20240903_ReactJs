@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export const CycleDeVie = () => {
   const [count, setCount] = useState(0);
@@ -20,7 +21,11 @@ export const CycleDeVie = () => {
       <h1>Cycle de vie</h1>
       <p>count: {count}</p>
       <button onClick={() => setCount((prev) => prev + 1)}>Incrémenter</button>
-      <p>Composant class: </p>
+      <br />
+      <br />
+      <Link to={"/cycle-de-vie/class"} className="underline">
+        Exemple avec composant class:{" "}
+      </Link>
     </div>
   );
 };

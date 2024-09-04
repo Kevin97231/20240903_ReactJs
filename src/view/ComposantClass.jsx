@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-export class ClassComponent extends Component {
+export class ComposantClass extends Component {
   // Le constructeur est appelé lorsqu'une instance de la classe est créée.
   constructor(props) {
     // Appel au constructeur parent avec les props

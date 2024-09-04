@@ -8,6 +8,7 @@ import { Flux } from "./view/Flux";
 import { Exercice } from "./view/Exercice";
 import { HookUseEffect } from "./view/HookUseEffect";
 import { CycleDeVie } from "./view/CycleDeVie";
+import { ComposantClass } from "./view/ComposantClass";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="exercice" element={<Exercice />} />
           <Route path="use-effect" element={<HookUseEffect />} />
           <Route path="cycle-de-vie" element={<CycleDeVie />} />
+          <Route path="cycle-de-vie/class" element={<ComposantClass />} />
         </Routes>
       </BrowserRouter>
     </>
