@@ -1,11 +1,23 @@
+import { useState } from "react";
+import { Modal } from "./Modal";
+import { FormProductAvecVerif } from "./FormProductAvecVerif";
+
 /* eslint-disable react/prop-types */
-export const Table = ({ data = [], removeFunction }) => {
+export const Table = ({ data = [], removeFunction, updateFunction }) => {
   let cles = [];
 
   if (data.length > 0) {
     // Object.keys(data[0]) --> renvoie l'ensmeble des attributs du premier objet de data
     cles = Object.keys(data[0]);
   }
+
+  const [productToModify, setProductToModify] = useState({});
+
+  const handleUpdate = (product) => {
+    const modal = document.getElementById("my_modal");
+    if (modal) modal.showModal();
+    setProductToModify(product);
+  };
 
   return (
     <div>
@@ -29,11 +41,28 @@ export const Table = ({ data = [], removeFunction }) => {
                 <button className="btn" onClick={() => removeFunction(product)}>
                   Supprimer
                 </button>
+                <button onClick={() => handleUpdate(product)}>Modifier</button>
               </td>
             </tr>
           ))}
         </tbody>
       </table>
+      <Modal
+        content={
+          <FormProductAvecVerif
+            submitMethod={updateFunction}
+            productToModify={productToModify}
+          />
+        }
+      />
+      {/* <Modal
+        content={
+          <FormProductAvecVerif
+            submitMethod={updateFunction}
+            productToModify={productToModify}
+          />
+        }
+      /> */}
     </div>
   );
 };

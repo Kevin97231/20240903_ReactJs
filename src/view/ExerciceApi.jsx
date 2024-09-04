@@ -27,11 +27,28 @@ export const ExerciceApi = () => {
       });
   };
 
+  const updateProduct = (updateProduct, id) => {
+    const removeUrl = `${url}/${id}`;
+    axios
+      .put(removeUrl, updateProduct)
+      .then((response) =>
+        setProducts((prevProduct) =>
+          prevProduct.map((productMap) =>
+            productMap.id === response.id ? { ...response.data } : productMap
+          )
+        )
+      );
+  };
+
   return (
     <div className="pt-20">
       <h1>Exercie API</h1>;
       <Consigne />
-      <Table data={products} removeFunction={deleteProduct} />
+      <Table
+        data={products}
+        removeFunction={deleteProduct}
+        updateFunction={updateProduct}
+      />
     </div>
   );
 };
