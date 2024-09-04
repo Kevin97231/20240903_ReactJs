@@ -10,6 +10,7 @@ import { HookUseEffect } from "./view/HookUseEffect";
 import { CycleDeVie } from "./view/CycleDeVie";
 import { ComposantClass } from "./view/ComposantClass";
 import { RequeteApi } from "./view/RequeteApi";
+import { ExerciceApi } from "./view/ExerciceApi";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<JsxTheorie />} />
-          <Route path="/hook-use-state" element={<HookUseState />} />
+          <Route path="hook-use-state" element={<HookUseState />} />
           <Route path="formulaire" element={<Formulaire />} />
           <Route path="flux" element={<Flux />} />
           <Route path="exercice" element={<Exercice />} />
@@ -26,6 +27,7 @@ function App() {
           <Route path="cycle-de-vie" element={<CycleDeVie />} />
           <Route path="cycle-de-vie/class" element={<ComposantClass />} />
           <Route path="requete-api" element={<RequeteApi />} />
+          <Route path="exercice-api" element={<ExerciceApi />} />
         </Routes>
       </BrowserRouter>
     </>

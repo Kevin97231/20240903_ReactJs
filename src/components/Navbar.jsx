@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
@@ -46,6 +47,9 @@ export const Navbar = () => {
             <li>
               <Link to={"/exercice"}>Exercice</Link>
             </li>
+            <li>
+              <Link to={"/exercice-api"}>Exercice API</Link>
+            </li>
           </ul>
         </div>
         <Link className="btn btn-ghost text-xl" to={"/"}>
@@ -73,7 +77,10 @@ export const Navbar = () => {
             <Link to={"/requete-api"}>Requettes API</Link>
           </li>
           <li>
-            <Link to={"/exercice"}>Exercice</Link>
+            <Link to={"/exercice"}>Exercice 'fruits'</Link>
+          </li>
+          <li>
+            <Link to={"/exercice-api"}>Exercice API</Link>
           </li>
         </ul>
       </div>
