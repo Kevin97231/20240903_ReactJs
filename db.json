@@ -2,17 +2,10 @@
   "products": [
     {
       "name": "Zucchini",
-      "price": "5",
-      "number": "6",
+      "price": "10",
+      "number": "10",
       "category": "Vegetables",
       "id": "f774"
-    },
-    {
-      "id": "cb03",
-      "category": "test",
-      "name": "test",
-      "number": "12",
-      "price": "15.00"
     },
     {
       "name": "goyave",
@@ -36,25 +29,11 @@
       "id": "b5c1"
     },
     {
-      "name": "bananeur",
-      "price": "8",
-      "number": "15",
-      "category": "Fruits",
-      "id": "4ae1"
-    },
-    {
       "name": "Banane",
       "price": "3",
       "number": "15",
       "category": "Vegetables",
       "id": "ec50"
-    },
-    {
-      "name": "TestNumberrrrr",
-      "price": "2",
-      "number": 15,
-      "category": "Fruits",
-      "id": "8061"
     },
     {
       "id": "7e0d",
@@ -111,13 +90,6 @@
       "name": "Zucchini",
       "number": 7,
       "price": null
-    },
-    {
-      "id": "29e1",
-      "category": "",
-      "name": "Test",
-      "number": 15,
-      "price": 26
     },
     {
       "id": "6227",
