@@ -34,7 +34,9 @@ export const ExerciceApi = () => {
       .then((response) =>
         setProducts((prevProduct) =>
           prevProduct.map((productMap) =>
-            productMap.id === response.id ? { ...response.data } : productMap
+            productMap.id === response.data.id
+              ? { ...response.data }
+              : productMap
           )
         )
       );

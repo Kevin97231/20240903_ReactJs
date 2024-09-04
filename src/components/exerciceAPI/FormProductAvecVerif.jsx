@@ -4,17 +4,23 @@
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 
-export const FormProductAvecVerif = ({ submitMethod, productToModify }) => {
+export const FormProductAvecVerif = ({
+  submitMethod,
+  productToModify,
+  closeModal,
+}) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
     setValue,
+    clearErrors,
   } = useForm();
 
   useEffect(() => {
     Object.keys(productToModify).forEach((key) => {
       setValue(key, productToModify[key]);
+      clearErrors(key);
     });
   }, [productToModify]);
 
@@ -24,14 +30,15 @@ export const FormProductAvecVerif = ({ submitMethod, productToModify }) => {
     min: { value: 0, message: "Valeur min: 0" },
   };
 
-  const submitTest = (e) => {
-    console.log("Envoi réussi !!");
+  const onSubmit = (product) => {
+    submitMethod(product, productToModify.id);
+    closeModal();
   };
 
   return (
     <>
       {productToModify && (
-        <form onSubmit={handleSubmit(submitTest)}>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <div className="grid grid-cols-4 mb-5">
             <div>
               <input

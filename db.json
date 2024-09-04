@@ -1,10 +1,10 @@
 {
   "products": [
     {
-      "name": "Zucchiniiijojoj",
+      "name": "Zucchini",
       "price": "5",
       "number": "6",
-      "category": "",
+      "category": "Vegetables",
       "id": "f774"
     },
     {
@@ -22,11 +22,11 @@
       "id": "4e79"
     },
     {
-      "id": "0d1c",
-      "category": "Fruits",
       "name": "mangue",
+      "price": "2",
       "number": "15",
-      "price": "2"
+      "category": "Fruits",
+      "id": "0d1c"
     },
     {
       "name": "mango",

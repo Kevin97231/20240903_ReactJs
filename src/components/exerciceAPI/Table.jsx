@@ -19,6 +19,11 @@ export const Table = ({ data = [], removeFunction, updateFunction }) => {
     setProductToModify(product);
   };
 
+  const closeModal = () => {
+    const modal = document.getElementById("my_modal");
+    if (modal) modal.close();
+  };
+
   return (
     <div>
       <table>
@@ -52,6 +57,7 @@ export const Table = ({ data = [], removeFunction, updateFunction }) => {
           <FormProductAvecVerif
             submitMethod={updateFunction}
             productToModify={productToModify}
+            closeModal={closeModal}
           />
         }
       />
