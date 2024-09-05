@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Consigne } from "../components/exerciceAPI/Consigne";
-import axios from "axios";
 import { Table } from "../components/exerciceAPI/Table";
 import { useAxios } from "../hooks/useAxios";
 
@@ -9,7 +8,7 @@ export const ExerciceApi = () => {
 
   const { get, put, remove } = useAxios();
 
-  const url = "http://localhost:3001/products";
+  // const url = "http://localhost:3001/products";
 
   useEffect(() => {
     console.log("requete en cours");
